@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="/assets/logo 2.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0" style="background-color: #0E809B;">
+    <header>
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-white shadow-md">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <p class="text-base text-blue-800">Primakara Inventory</p>
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-blue-600 font-bold" href="#">Home</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">About us</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+               
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">History</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+            </ul>
+            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
+            <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <p class="text-base text-blue-800">Primakara Inventory</p>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">History</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
+                        <a class="block px-4 py-3 mb-2  text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2021</span>
+                    </p>
+                </div>
+            </nav>
+        </div>            
+    </header>
+    <main>
+        <a href="/">
+            <div class="back p-2 shadow-md m-5 rounded-xl flex justify-center bg-white hover:bg-gray-100" style="width: 150px; border: 1px solid #003764;">
+                <p class=" flex">kembali</p>
+            </div>
+        </a>
+        <div class="box m-5 shadow-lg rounded-md bg-white">
+            <div class="card p-5 flex" >
+                <img src="/uploads/<%= ruang.foto_ruangan %>" alt="" srcset="" style="width: 300px; height: 200px;" class="rounded-lg" >
+                <div class="box" style="margin-left: 50px;">
+                    <p><%= ruang.nama_ruangan %></p>
+                    <P>4×7 Meter / Max Capacity <b>30</b></P>
+                    <div class="tabel block mt-2">
+                      <div class="shadow-lg rounded-lg overflow-hidden">
+                        <table class="w-full table-fixed">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    
+                                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Foto Barang</th>
+                                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Nama Barang</th>
+                                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <% barang.forEach(function(b) { %> 
+                                    <tr>
+                                        <td class="py-4 px-6 border-b border-gray-200">
+                                            <img src="/uploads/<%= b.foto_barang %>" alt="" srcset="" style="width: 150px; height: 100px;">
+                                        </td>
+                                        <td class="py-4 px-6 border-b border-gray-200 truncate"><%= b.nama_barang %></td>
+                                        <td class="py-4 px-6 border-b border-gray-200"><%= b.jumlah %></td>
+                                    </tr>
+                                <% }); %>  
+                                <!-- Add more rows here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+              <div class="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
+                <form action="/peminjaman/store" method="POST">
+                    <div class="space-y-12">
+                      <div class="border-b border-gray-900/10 pb-12">
+                        <h2 class="text-xl font-semibold leading-7 text-gray-900 text-center">Silahkan isi form berikut!</h2>
+                        <p class="text-sm leading-7 text-gray-900 text-center">Diingatkan untuk melihat jadwal ruangan di bawah terlebih dahulu sebelum mengisi form!</p>
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                          <div class="col-span-full">
+                            <label for="nim" class="block text-sm font-medium leading-6 text-gray-900">Nomor Induk Mahasiswa</label>
+                            <div class="mt-2">
+                              <input value="" id="nim" name="nim" type="text" autocomplete="" class=" p-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+
+                          <div class="col-span-full">
+                            <label for="kode_ruangan" class="block text-sm font-medium leading-6 text-gray-900">Kode Ruangan</label>
+                            <div class="mt-2">
+                              <input value=<%= kode %> id="kode_ruangan" name="kode_ruangan" type="text" autocomplete="" class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required style="background-color: #e8e8e8;">
+                            </div>
+                          </div>
+                          
+                  
+                          <div class="col-span-full">
+                            <label for="kegiatan" class="block text-sm font-medium leading-6 text-gray-900">Kegiatan</label>
+                            <div class="mt-2">
+                              <input value="" type="text" name="kegiatan" id="kegiatan" autocomplete="" class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+
+                          <div class="sm:col-span-3">
+                            <label for="mulai" class="block text-sm font-medium leading-6 text-gray-900">Waktu Mulai</label>
+                            <div class="mt-2">
+                              <input value="" type="datetime-local" name="mulai" id="mulai" autocomplete="" placeholder="" class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                          <div class="sm:col-span-3">
+                            <label for="selesai" class="block text-sm font-medium leading-6 text-gray-900">Waktu Selesai</label>
+                            <div class="mt-2">
+                              <input value="" type="datetime-local" name="selesai" id="selesai" autocomplete="" class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="mt-6 flex items-center justify-end gap-x-6">
+                      <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                      <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        
+          <div class="tabel block m-5">
+            <div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10">
+              <table class="w-full table-fixed">
+                  <thead>
+                      <tr class="bg-gray-100">
+                          <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Kegiatan</th>
+                          <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Waktu mulai</th>
+                          <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Waktu selesai</th>
+                      </tr>
+                  </thead>
+                  <tbody class="bg-white">
+                    <% jadwal_index.forEach(function(j) { %> 
+                        <tr>
+                            <td class="py-4 px-6 border-b border-gray-200"><%=j.kegiatan %></td>
+                            <td class="py-4 px-6 border-b border-gray-200 truncate"><%=  formatTanggal(j.waktu_mulai) %></td>
+                            <td class="py-4 px-6 border-b border-gray-200"><%= formatTanggal(j.waktu_selesai)  %></td>
+                        </tr>
+                    <% }); %>  
+                      <!-- Add more rows here -->
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        
+        
+    </main>
+    <footer class=" bg-blue-950 mt-8" style="height: 40vh;">
+
+    </footer>
+
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+        </script>
+</body>
+</html>

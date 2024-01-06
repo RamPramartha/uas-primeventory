@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="/assets/logo 2.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0" >
+    <header>
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-white shadow-md">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <p class="text-base text-blue-800">Primakara Inventory</p>
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-blue-600 font-bold" href="#">Home</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">About us</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+               
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">History</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <p class="text-base text-blue-800">Primakara Inventory</p>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">History</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
+                        <a class="block px-4 py-3 mb-2  text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2021</span>
+                    </p>
+                </div>
+            </nav>
+        </div>            
+    </header>
+    <div class="banner" style="background-image: url('/assets/LoginCar.jpg'); height: 350px;">
+        <div class="konten-banner">
+            <h1 class="text-center text-white font-semibold" style="font-size: 40px; padding-top: 125px;">Selamat Datang!</h1>
+            <p class="text-center text-white font-medium mt-0" style="font-size: 40px;">Ingin Meminjam Ruangan?</p>
+        </div>
+    </div>
+    <main class="mt-10 ml-4 mr-4">
+        <div class="lab">
+            <h2 class="font-medium" style="font-size: 25px;">Lab</h2>
+            <hr style="border: 0.5px solid gray;">
+
+            <!-- Lab -->
+            <div class="flex flex-wrap gap-5 justify-center">
+                <% lab.forEach(function(l) { %> 
+                    <div class="card mt-5 rounded-md" style="width: 350px; height: auto; background: #003764; box-shadow: 2px 2px 6px;">
+                        <div style="background-image:url('/uploads/<%= l.foto_ruangan %> ') ; height: 235px; background-size: cover;"></div>
+                        <div class="konten-card p-4">
+                            <h2 class="text-lg text-white font-bold"><%= l.nama_ruangan %></h2>
+                            <p class="text-sm text-white"> <%= l.deskripsi_ruangan %></p>
+                            <a href="/peminjaman/<%= l.kode_ruangan %>">
+                                <button type="" class="px-3 py-2 bg-white rounded-lg mt-7" style="font: #003764; width: 100%;">PINJAM SEKARANG</button>
+                            </a>
+                        </div>
+                    </div>
+                <% }); %>
+    
+                
+            </div>
+        </div>
+        <div class="kelas mt-5">
+            <h2 class="font-medium" style="font-size: 25px;">Kelas</h2>
+            <hr style="border: 0.5px solid gray;">
+
+            <!-- Kelas -->
+            <div class="flex flex-wrap gap-5 justify-center">
+               
+                <div class="flex flex-wrap gap-5 justify-center">
+                    <% kelas.forEach(function(k) { %> 
+                        <div class="card mt-5 rounded-md" style="width: 350px; height: auto; background: #003764; box-shadow: 2px 2px 6px;">
+                            <div style="background-image:url('/uploads/<%= k.foto_ruangan %> ') ; height: 235px; background-size: cover;"></div>
+                            <div class="konten-card p-4">
+                                <h2 class="text-lg text-white font-bold"><%= k.nama_ruangan %></h2>
+                                <p class="text-sm text-white"> <%= k.deskripsi_ruangan %></p>
+                                <a href="/peminjaman/<%= k.kode_ruangan %>">
+                                    <button type="" class="px-3 py-2 bg-white rounded-lg mt-7" style="font: #003764; width: 100%;">PINJAM SEKARANG</button>
+                                </a>
+                            </div>
+                        </div>
+                    <% }); %>  
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <!-- Lainnya -->
+        <div class="lainnya mt-5">
+            <h2 class="font-medium" style="font-size: 25px;">Lainnya</h2>
+            <hr style="border: 0.5px solid gray;">
+
+            <div class="flex flex-wrap gap-5 justify-center">
+
+                <div class="flex flex-wrap gap-5 justify-center">
+                    <% lain.forEach(function(la) { %> 
+                        <div class="card mt-5 rounded-md" style="width: 350px; height: auto; background: #003764; box-shadow: 2px 2px 6px;">
+                            <div style="background-image:url('/uploads/<%= la.foto_ruangan %> ') ; height: 235px; background-size: cover;"></div>
+                            <div class="konten-card p-4">
+                                <h2 class="text-lg text-white font-bold"><%= la.nama_ruangan %></h2>
+                                <p class="text-sm text-white"> <%= la.deskripsi_ruangan %></p>
+                                <a href="/peminjaman/<%= la.kode_ruangan %>">
+                                    <button type="" class="px-3 py-2 bg-white rounded-lg mt-7" style="font: #003764; width: 100%;">PINJAM SEKARANG</button>
+                                </a>
+                            </div>
+                        </div>
+                    <% }); %>  
+                </div>
+  
+              
+  
+              
+              
+
+            
+
+            
+         
+  
+             
+  
+              
+    </main>
+    <footer class=" bg-blue-950 mt-8" style="height: 40vh;">
+
+    </footer>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+        </script>
+</body>
+</html>
